@@ -1,0 +1,19 @@
+<div id = "app">
+    姓名：{{ username.toUpperCase() }}
+    朋友: {{ firentd.username }}
+    <p>年龄：{{ age > 18 ? '成年人':'未成年人' }}</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            username: 'ljj',
+            age: 12,
+            firentd: {
+                username: 'zsy'
+            }
+        }
+    })
+</script>
